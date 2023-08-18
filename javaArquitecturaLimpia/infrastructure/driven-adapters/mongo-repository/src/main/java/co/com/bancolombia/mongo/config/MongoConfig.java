@@ -27,7 +27,7 @@ public class MongoConfig {
         properties.setUri(secret.getUri());
 
         List<MongoClientSettingsBuilderCustomizer> list = new ArrayList<>();
-        list.add(new MongoPropertiesClientSettingsBuilderCustomizer(properties));
+        list.add(new MongoPropertiesClientSettingsBuilderCustomizer(properties, null));
         return new ReactiveMongoClientFactory(list);
     }
 }

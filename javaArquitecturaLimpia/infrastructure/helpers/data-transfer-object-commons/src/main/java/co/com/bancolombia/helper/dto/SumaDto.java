@@ -1,20 +1,19 @@
-package co.com.bancolombia.model.suma;
+package co.com.bancolombia.helper.dto;
 
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@EqualsAndHashCode
 @Builder(toBuilder = true)
 @Getter
-public class Suma {
+@Setter
+@EqualsAndHashCode
+public class SumaDto {
 
     private String id;
     private double numeroUno;
     private double numeroDos;
     private double resultado;
     private String fecha;
-
 }
-
